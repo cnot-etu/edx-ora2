@@ -483,7 +483,6 @@ class OpenAssessmentBlock(MessageMixin,
         """
 
         item_id = str(self.scope_ids.usage_id)
-        item_id = item_id[item_id.rfind('@')+1:]
 
         # This is not the real way course_ids should work, but this is a
         # temporary expediency for LMS integration
