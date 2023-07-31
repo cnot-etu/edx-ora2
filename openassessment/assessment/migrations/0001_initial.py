@@ -82,7 +82,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('student_id', models.CharField(max_length=40, db_index=True)),
-                ('item_id', models.CharField(max_length=128, db_index=True)),
+                ('item_id', models.CharField(max_length=255, db_index=True)),
                 ('course_id', models.CharField(max_length=40, db_index=True)),
                 ('submission_uuid', models.CharField(unique=True, max_length=128, db_index=True)),
                 ('created_at', models.DateTimeField(default=django.utils.timezone.now, db_index=True)),
@@ -123,7 +123,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('submission_uuid', models.CharField(unique=True, max_length=128, db_index=True)),
                 ('student_id', models.CharField(max_length=40, db_index=True)),
-                ('item_id', models.CharField(max_length=128, db_index=True)),
+                ('item_id', models.CharField(max_length=255, db_index=True)),
                 ('course_id', models.CharField(max_length=40, db_index=True)),
             ],
         ),
